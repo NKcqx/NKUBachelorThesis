@@ -1,0 +1,58 @@
+% !TeX root = ../main.tex
+% -*- coding: utf-8 -*-
+
+
+\begin{zhaiyao}
+
+近年来，网络数据量已呈爆炸式增长，人们每天都产生着海量的数据。如何有效利用这些数据，
+从中挖掘出有价值的信息帮助人们认识世界成为了一个重要课题，链接预测问题也由此产生。
+
+
+链接预测可以挖掘出网络中丢失的链接或进行网络动态分析，这在现如今有着广泛的应用，如用户推荐系统、致病基因挖掘、药物互作挖掘等。
+考虑到数据通常为嵌入在高维空间的低维流形结构，本文首先提出了一个基于线性流形学习的算法来预测网络中的链接。
+之后，文中又利用辅助信息构建了两个流形，令其通过协同学习的方式互相补全流型结构来弥补由数据稀疏带来的流型结构不完整的问题。
+
+
+为了探究协同学习和流形学习的有效性，本文使用交叉验证和后续检验对多个算法做了对比，实验证明所提算法与其它算法相比的确有显著提升；
+为了进一步衡量算法性能、探究数据结构的特点与性能的关系，文中又设计了多个实验并做了解释分析；
+本文最后将该算法实际应用到了药物关联预测中并得到了令人满意的预测结果。
+\end{zhaiyao}
+
+
+\vspace{150pt}
+
+\begin{guanjianci}
+链接预测；流形学习；协同学习；实验设计
+\end{guanjianci}
+
+
+
+\begin{abstract}
+
+
+In recent years, the amount of data in network has exploded and people can generate massive amounts of data every day. 
+How to utilize those data, digging out some useful information buried underground to give us a hint of real world, 
+has become an important subject and thus generating a problem called link prediction.
+
+
+Link prediction can be used to extract missing information, identify spurious interactions, evaluate network evolving mechanisms, and so on. 
+So that it can be used in recommendation systems, Pathogenic gene mining and drug interaction mining. 
+In this article, a linear manifold learning algorithm has been devised to uncover novel interactions on a global scale 
+since data are usually embedded in low-dimensional manifolds. Then a collaborative learning method has been introduced 
+with the help of auxiliary information to solve the problem of data sparsity.
+
+
+To evaluate the overall performance of our method and find out some relationships between network topology structure 
+and predicting results, several experiments have been carried out. In the cross validation experiments, 
+our method achieved better results than eight other state-of-the-art methods in most cases and has better robustness. 
+Finally, we loaded some real DDI data to test our method and found that it predicted the left-out interactions reasonably well.
+
+\end{abstract}
+
+
+\vspace{100pt}
+
+
+\begin{keywords}
+link prediction; manifold learning; collaborative learning; experimental design and analysis
+\end{keywords} 

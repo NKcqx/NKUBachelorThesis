@@ -1,0 +1,72 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX program = xelatex
+% !BIB program = biber
+% !TEX TS-program = xelatex
+% !BIB TS-program = biber
+%%
+%%  本模板方式编译: XeLaTeX + biber
+%%
+%%  注意: 在改变编译方式前应先删除 *.toc 和 *.aux 文件
+%%
+\documentclass[12pt,openright]{book}
+
+% 引入NKThesis包
+\usepackage[emptydoublepage]{NKThesis}   % 中文
+%\usepackage[emptydoublepage,English]{NKThesis} % 英文
+
+% 其它包按需添加
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{multirow}
+% \usepackage{tocbibind}
+\usepackage{ulem}
+% \usepackage{subfigure}
+
+\usepackage{xeCJKfntef} %CJKunderline
+\xeCJKsetup{underline= {format = \color{black}, thickness=0.4pt}} %CJKunderline setting
+
+% 参考文献
+\addbibresource{nkthesis.bib}
+% 图片文件夹
+\graphicspath{{image/}}
+
+\includeonly{
+	./tex/abstract,
+	./tex/introduction,
+	./tex/method,
+	./tex/experiments,
+	./tex/summary,
+	./tex/references,
+	./tex/acknowledgements
+}
+\begin{document}
+%  设置基本信息
+%  注意:  逗号`,'是项目分隔符. 如果某一项的值出现逗号, 应放在花括号内, 如 {,}
+%
+\NKTsetup{
+	% 封面设置
+	论文题目(中文) = 面向协同线性流形学习的实验设计与分析,
+	论文题目(英文) = Experimental Design and Analysis for Collaborative Linear Manifold Learning,
+	学号           = 1511413,
+	姓名       = 陈齐翔,
+	年级          = 2015级,
+	学院          = 软件学院,
+	系别          = 软件工程,
+	专业          = 软件工程,
+	完成日期      = 2019年5月1日,
+	指导教师       = 谢茂强 副教授,
+}
+
+
+\include{./tex/abstract}
+
+\tableofcontents
+
+\include{./tex/introduction}
+\include{./tex/method}
+\include{./tex/experiments}
+\include{./tex/summary}
+\include{./tex/references}
+\include{./tex/acknowledgements}
+
+\end{document}
