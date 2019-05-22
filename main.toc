@@ -60,7 +60,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}后续检验}{19}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}算法鲁棒性实验}{21}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}算法鲁棒性实验}{22}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.4}节点度数与算法性能的关系}{22}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 

@@ -75,12 +75,12 @@
 
 
 为进一步帮助理解数据集的特点，我们又分析了每个数据集中节点度数的分布（图\ref{experiments:fig:node_distribution}），
-并统计了每个数据集的聚类系数、平均度数、平均最短路径等分析复杂网络常用的统计指标，见表\ref{experiments:table:simple_stats}。
+并统计了每个数据集的聚类系数、平均度数、网络直径等分析复杂网络常用的统计指标，见表\ref{experiments:table:simple_stats}。
 
 
 \begin{center}
     \tablecaption{对四个数据集的初步统计数据}
-    \begin{tabular}{@{\extracolsep{\fill}}c|cccc}\hline
+    \begin{tabular}{@{\extracolsep{\fill}}p{2.5cm}<{\centering}|p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}}\hline
         数据集        & Douban & Yelp & NIPS & DDI \\ \hline
         关系(A-B)   & 用户-电影 & 用户-商家 & 作者-出版物 & 药物-靶蛋白 \\
         A的数量       & 13367   & 16239  & 2865  &  758  \\
@@ -101,12 +101,11 @@
 
 \begin{center}
     \tablecaption{各数据集拓扑结构的详细信息}
-        \begin{tabular}{c|cccc}\hline
+        \begin{tabular}{p{2.5cm}<{\centering}|p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}}\hline
             数据集          & Douban & Yelp & NIPS & DDI \\ \hline
             聚类系数        & 0.017 & 0.226 & 0.609 & 0.164 \\
             网络密度       & 0.001   & 0.001  & 0.009  &  0.023  \\
             网络直径     & 29   & 11  & 11  &  7  \\
-            最短路径     & 4309882(43\%)    & 1071952414(95\%) & 5820682(84\%) & 524900(100\%) \\
             平均近邻数     & 1.948  & 14.990 & 23.048  & 16.348  \\ \hline
         \end{tabular}
         \label{experiments:table:simple_stats}
@@ -252,7 +251,7 @@ AUC值接近甚至低于0.5，因为这些算法并没有利用辅助信息也�
 
 \begin{center}
     \tablecaption{F检验在α=0.1时常用的临界值}
-    \begin{tabular}{|c|ccccccccc|} \hline
+    \begin{tabular}{|p{2.5cm}<{\centering}|p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1.5cm}<{\centering}|} \hline
         \multirow{2}{*}{数据集个数N} & \multicolumn{9}{c|}{算法个数} \\ \cline{2-10}
          & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
         4 & 5.538 & 3.463 & 2.813 & 2.480 & 2.273 & 2.130 & 2.023 & 1.940 & 1.874 \\
@@ -268,7 +267,7 @@ AUC值接近甚至低于0.5，因为这些算法并没有利用辅助信息也�
 
 \begin{center}
     \tablecaption{算法结果的排名统计}
-    \begin{tabular}{|c|ccccccccc|} \hline
+    \begin{tabular}{|p{2.5cm}<{\centering}|p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1.5cm}<{\centering}|} \hline
            & CLML & LML & CN & AA & NSI & LP & MCLP & MCRI & MRMF \\ \hline
         Douban & 1 & 5 & 9 & 8 & 6 & 7 & 2 & 3 & 4 \\
         Yelp & 1 & 7 & 8 & 9 & 6 & 4 & 3 & 5 & 2 \\

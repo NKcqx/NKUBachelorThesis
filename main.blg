@@ -1,18 +1,18 @@
-[1] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:302> INFO - This is Biber 2.11
 [1] Config.pm:305> INFO - Logfile is 'main.blg'
-[86] biber-darwin:313> INFO - === Thu May 23, 2019, 00:11:13
-[139] Biber.pm:371> INFO - Reading 'main.bcf'
-[560] Biber.pm:857> INFO - Found 15 citekeys in bib section 0
-[611] Biber.pm:3976> INFO - Processing section 0
-[639] Biber.pm:4136> INFO - Looking for bibtex format file 'nkthesis.bib' for section 0
-[646] bibtex.pm:1500> INFO - LaTeX decoding ...
-[751] bibtex.pm:1316> INFO - Found BibTeX data source 'nkthesis.bib'
-[754] Utils.pm:193> WARN - Duplicate entry key: 'scellato2011exploiting' in file 'nkthesis.bib', skipping ...
-[756] Utils.pm:193> WARN - Duplicate entry key: 'fokoue2016predicting' in file 'nkthesis.bib', skipping ...
-[1000] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1000] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1000] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[1000] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[1018] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[1030] bbl.pm:720> INFO - Output to main.bbl
-[1030] Biber.pm:110> INFO - WARNINGS: 2
+[51] biber-darwin:313> INFO - === Thu May 23, 2019, 00:51:08
+[81] Biber.pm:371> INFO - Reading 'main.bcf'
+[202] Biber.pm:857> INFO - Found 15 citekeys in bib section 0
+[218] Biber.pm:3976> INFO - Processing section 0
+[231] Biber.pm:4136> INFO - Looking for bibtex format file 'nkthesis.bib' for section 0
+[234] bibtex.pm:1500> INFO - LaTeX decoding ...
+[291] bibtex.pm:1316> INFO - Found BibTeX data source 'nkthesis.bib'
+[293] Utils.pm:193> WARN - Duplicate entry key: 'scellato2011exploiting' in file 'nkthesis.bib', skipping ...
+[294] Utils.pm:193> WARN - Duplicate entry key: 'fokoue2016predicting' in file 'nkthesis.bib', skipping ...
+[468] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[468] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[468] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[469] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[481] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[490] bbl.pm:720> INFO - Output to main.bbl
+[490] Biber.pm:110> INFO - WARNINGS: 2
