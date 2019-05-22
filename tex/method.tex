@@ -5,12 +5,12 @@
 \label{chpt:method}
 协同线性流形学习（Collaborative Linear Manifold Learning，CLML）是一个基于流形学习做链接预测的算法。
 该算法首先假设了数据空间是一个低维嵌入，利用辅助矩阵和目标矩阵分别学习到了两个流形，通过“两个流形具有一致性”这个假设定义出了带低秩约束的损失函数；
-最后，算法使用随机梯度下降对模型进行优化。图2.1以药物-药物关联预测为例展示了算法的主要流程，本章将分小节介绍该算法的各个部分。
+最后，算法使用随机梯度下降对模型进行优化。图\ref{method:fig:CLML}以药物-药物关联预测为例展示了算法的主要流程，本章将分小节介绍该算法的各个部分。
 
 \begin{figure} 
   \centering
-  \includegraphics{CLML.png}
-  \caption{ CLML算法主要流程}
+  \includegraphics[width=15cm, height=9cm]{CLML.pdf}
+  \caption{CLML算法主要流程}
   \label{method:fig:CLML}
 \end{figure} 
 
@@ -18,10 +18,9 @@
 \section{符号表示}
 \label{method:sec:notations}
 
-为了简化算法推导过程中对所用符号的解释并保持上下文符号一致性，本节总结了将要用到的所有重要符号并做了解释，各符号意义参见表2.1。
+为了简化算法推导过程中对所用符号的解释并保持上下文符号一致性，本节总结了将要用到的所有重要符号并做了解释，各符号意义参见表\ref{method:table:notations}。
 
 \begin{center}
-    \label{method:table:notations}
 \tablecaption{各符号释义}
 \begin{tabular}{l|l} \hline
     符号 & 意义 \\ \hline
@@ -36,8 +35,8 @@
     $\sigma_i$  & 矩阵第i大的奇异值 \\
     $X\odot{Y}$ & $X$与$Y$的哈达玛积 \\
     $\langle{X},\ Y\rangle$ & X与Y的内积 \\ \hline
-
 \end{tabular}
+\label{method:table:notations}
 \end{center}
 
 目标矩阵就是我们要对其预测的矩阵，辅助矩阵就是算法中引入的辅助信息对应的矩阵，网络间关联矩阵就是这两各矩阵间的关系。
@@ -54,11 +53,11 @@
 
 局部线性嵌入（Locally Linear Embedding，LLE）是流形学习的一个著名算法。
 LLE假设，在高维空间中的任意一个点，在局部范围内（它的k近邻点）近似位于一个超平面上，
-所以该样本点可以通过其k近邻点的线性组合重构出来，即空间中的一点满足式2.1。
+所以该样本点可以通过其k近邻点的线性组合重构出来，即空间中的一点满足式(\ref{method:formula:self_repre})。
 
 
 \begin{equation}
-    \hat{X_i}=\sum_{j\in\phi(i)}\omega_{ij}X_j
+    \hat{X_i}=\sum_{j\in\phi(i)}\omega_{ij}X_j \label{method:formula:self_repre}
 \end{equation}
 
 其中，$\phi(i)$表示点i的k近邻点集合，$\omega_{ij}$为线性重构时每个点的权重系数，为$\omega_{ij}$找到合适的值后便可令每个点都由其近邻点线性表出。
@@ -68,20 +67,21 @@ LLE算法的不足之处在于，当数据过于稀疏时容易产生“断路�
 而稀疏子空间聚类（Sparsity Subspace Clustering，SSC）算法认为，
 在一个子空间内的每个点都可以由其余所有点线性表出[1]。
 因此为了应对数据稀疏的问题，CLML在LLE的基础上，将重构过程扩展到了全局范围内，
-即每个点均使用其余所有点来线性表出而不再仅使用其k近邻点，即使其余点并未与该点直接相连，如图2.2所示。
+即每个点均使用其余所有点来线性表出而不再仅使用其k近邻点，即使其余点并未与该点直接相连，如图\ref{method:fig:global_manifold}所示。
 
 \begin{figure}
     \centering
-    \includegraphics[width=15cm, height=6cm]{global_manifold.png}
+    \includegraphics[width=15cm, height=6cm]{global_manifold.pdf}
     \caption{将构建流形使用的点扩张至全局范围内}
+    \label{method:fig:global_manifold}
 \end{figure}
 
-因此我们得到了式(2.2)中的对先验数据的约束，其中$W_{ij}$便是为了控制与点相连和不相连的点在重构时的权重。
-$W_{ij}$的取值如式(2.3)所示，里面的$\mu$是一个介于[0, 1]内的可调节的参数，为了让直接相连的点在重构时权重更大，通常令$\mu\geq0.5$；
+因此我们得到了式(\ref{method:formula:constraint})中的对先验数据的约束，其中$W_{ij}$便是为了控制与点相连和不相连的点在重构时的权重。
+$W_{ij}$的取值如式(\ref{method:formula:weight})所示，里面的$\mu$是一个介于[0, 1]内的可调节的参数，为了让直接相连的点在重构时权重更大，通常令$\mu\geq0.5$；
 是一个足够大的数来保证矩阵对角线元素接近0，这保证了每个点只能由其余点来表示（而不是用自己表示）。
 
 \begin{equation}
-    f(D)=\sum^m_{i=1}\sum^m_{j=1}W_{ij}(D_{ij}-D_{0ij})
+    f(D)=\sum^m_{i=1}\sum^m_{j=1}W_{ij}(D_{ij}-D_{0ij}) \label{method:formula:constraint}
 \end{equation}
 
 
@@ -91,6 +91,7 @@ $W_{ij}$的取值如式(2.3)所示，里面的$\mu$是一个介于[0, 1]内的�
         1 - \mu,& if\ \ D_{0ij} = 0 \\
         \rho,& if\ \ i = j
         \end{cases}
+        \label{method:formula:weight}
 \end{equation}
 
 
@@ -102,13 +103,14 @@ $W_{ij}$的取值如式(2.3)所示，里面的$\mu$是一个介于[0, 1]内的�
 
 
 我们观察到，矩阵$D$、$R$的结构类似，也就是说使用$D$线性重构$R$矩阵后得到的结果仍为$m*n$的矩阵，且仍代表网络间的相互关系。
-于是，我们利用这一特点对$R$和$R*D$的近似做了约束。为了防止过拟合，我们还加入了对矩阵$D$的正则化项，最终得到式(2.4)。
+于是，我们利用这一特点对$R$和$R*D$的近似做了约束。为了防止过拟合，我们还加入了对矩阵$D$的正则化项，最终得到式(\ref{method:formula:simple_ver})。
 
 
 \begin{align}
 L(D)&=\sum_{i=1}^m\Arrowvert{R_i-\sum_{j\neq{i}} R_jD_{ij} }\Arrowvert^2 + 
 \alpha\sum_{i=1}^m\sum_{j=1}^mW_{ij}(D_{ij}-D_{0ij})+\gamma\Arrowvert{D}\Arrowvert_F^2\nonumber \\
     &= \Arrowvert{R-RD}\Arrowvert_F^2+\alpha\Arrowvert{W}\odot(D-D_0)\Arrowvert_F^2+\gamma\Arrowvert{D}\Arrowvert_F^2
+    \label{method:formula:simple_ver}
 \end{align}
 
 式中，$\alpha$和$\beta$为超参，分别控制先验数据的约束项和正则项对损失函数的影响。最终学习到的$D$矩阵中的每个元素将是一个在[0, 1]范围内的连续数值，
@@ -121,7 +123,7 @@ L(D)&=\sum_{i=1}^m\Arrowvert{R_i-\sum_{j\neq{i}} R_jD_{ij} }\Arrowvert^2 +
 如果一个矩阵的秩远小于它的维数，则可称为低秩矩阵。低秩也代表着矩阵行、列间的相关性很强，可以互相线性表出，
 该特性可很好的运用在特征分析或矩阵补全（如图像修复、链接预测等）上，而在\ref{method:subsec:prior}节中提到，需要让矩阵$D$中的每个点均由其余点线性表出，
 因此可以通过引入低秩约束来更好地满足这一需求。为保持矩阵低秩，可对矩阵使用$L0$范数约束，但$L0$范数的优化是个NP难问题，
-故我们使用核范数来近似，也即令式X中的F范数替换为$\Arrowvert{D}\Arrowvert_*^2$。
+故我们使用核范数来近似，也即令式(\ref{method:formula:simple_ver})中的F范数替换为$\Arrowvert{D}\Arrowvert_*^2$。
 
 
 \section{协同学习}
@@ -130,20 +132,21 @@ L(D)&=\sum_{i=1}^m\Arrowvert{R_i-\sum_{j\neq{i}} R_jD_{ij} }\Arrowvert^2 +
 仅利用$R$和$R*D$之间的相似性得到的预测结果并不好，且观察后发现$R$和$R*D$之间仅有50\%左右的相似性。
 
 
-但注意到，辅助矩阵$T$和$R$同样具有相似的结构，使用$T*R$组合得到的新的矩阵同先前使用$D$矩阵时一样，都应和$R$矩阵近似，因此可以很快推导出式(2.5)。
+但注意到，辅助矩阵$T$和$R$同样具有相似的结构，使用$T*R$组合得到的新的矩阵同先前使用$D$矩阵时一样，都应和$R$矩阵近似，因此可以很快推导出式(\ref{method:formula:dual_ver})。
 
 \begin{align}
 L(T)&=\sum_{i=1}^m\Arrowvert{R_i-\sum_{j\neq{i}} T_{ij}R_j }\Arrowvert^2 
 +\alpha\sum_{i=1}^m\sum_{j=1}^mW_{ij}(T_{ij}-T_{0ij})+\gamma\Arrowvert{T}\Arrowvert_*^2 \nonumber \\
     &=\Arrowvert{R-TR}\Arrowvert_F^2+\alpha\Arrowvert{W}\odot(T-T_0)\Arrowvert_F^2+\gamma\Arrowvert{T}\Arrowvert_*^2
+    \label{method:formula:dual_ver}
 \end{align}
 
 
-值得注意的是，在式(2.4)和式(2.5)中使用的是同一个R矩阵。我们令$R_d=R*D$和$R_t = T*R$，则$R_d$和$R_t$都应与矩阵$R$近似，区别仅在于二者使用的是不同的先验数据。
+值得注意的是，在式(\ref{method:formula:simple_ver})和式(\ref{method:formula:dual_ver})中使用的是同一个R矩阵。我们令$R_d=R*D$和$R_t = T*R$，则$R_d$和$R_t$都应与矩阵$R$近似，区别仅在于二者使用的是不同的先验数据。
 既然$R_d$和$R_t$都与同一个$R$近似，那么理论上$R_d$和$R_t$也应具有一致性，即$R_d \approx R_t$。基于此，我们提出了如式(2.6)所示的协同学习算法的损失函数，
-式中$W_1$、$W_2$的取值和作用与式(2.4), (2.5)相同，$\alpha$、$\beta$仍为超参。
+式中$W_1$、$W_2$的取值和作用与式(\ref{method:formula:simple_ver}), 式(\ref{method:formula:dual_ver})相同，$\alpha$、$\beta$仍为超参。
 \begin{align}
-L(D,\ T)=&\Arrowvert{RD-RT}\Arrowvert_F^2+\alpha\Arrowvert{W_1}\odot(T-T_0)\Arrowvert_F^2 \nonumber\\
+L(D,\ T)=&\Arrowvert{RD-TR}\Arrowvert_F^2+\alpha\Arrowvert{W_1}\odot(T-T_0)\Arrowvert_F^2 \nonumber\\
         &+\beta\Arrowvert{W_2}\odot(D-D_0)\Arrowvert_F^2+ \gamma(\Arrowvert{T}\Arrowvert_*^2+\Arrowvert{D}\Arrowvert_*^2)
 \end{align}
 通过协同学习的方式我们可以克服$R$矩阵数据稀疏导致重构后两矩阵差异较大（仅50\%）的问题。

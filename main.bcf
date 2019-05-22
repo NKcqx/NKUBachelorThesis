@@ -2122,6 +2122,29 @@
     <bcf:datasource type="file" datatype="bibtex">nkthesis.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">吕琳媛2010复杂网络链路预测</bcf:citekey>
+    <bcf:citekey order="2">李淑玲2012基于相似性的链接预测方法研究</bcf:citekey>
+    <bcf:citekey order="3">wang2017novel</bcf:citekey>
+    <bcf:citekey order="4">李淑玲2012基于相似性的链接预测方法研究</bcf:citekey>
+    <bcf:citekey order="5">adamic2003friends</bcf:citekey>
+    <bcf:citekey order="6">fokoue2016predicting</bcf:citekey>
+    <bcf:citekey order="7">huang2013systematic</bcf:citekey>
+    <bcf:citekey order="8">juurlink2003drug</bcf:citekey>
+    <bcf:citekey order="9">zhang2018prioritizing</bcf:citekey>
+    <bcf:citekey order="10">fokoue2016predicting</bcf:citekey>
+    <bcf:citekey order="11">vilar2012drug</bcf:citekey>
+    <bcf:citekey order="12">vilar2012drug</bcf:citekey>
+    <bcf:citekey order="13">vilar2012drug</bcf:citekey>
+    <bcf:citekey order="14">vilar2012drug</bcf:citekey>
+    <bcf:citekey order="15">vilar2012drug</bcf:citekey>
+    <bcf:citekey order="16">李淑玲2012基于相似性的链接预测方法研究</bcf:citekey>
+    <bcf:citekey order="17">李淑玲2012基于相似性的链接预测方法研究</bcf:citekey>
+    <bcf:citekey order="18">chen2014robust</bcf:citekey>
+    <bcf:citekey order="19">scellato2011exploiting</bcf:citekey>
+    <bcf:citekey order="20">elhamifar2013sparse</bcf:citekey>
+    <bcf:citekey order="21">xu2016link</bcf:citekey>
+    <bcf:citekey order="22">singh2008relational</bcf:citekey>
+    <bcf:citekey order="23">guimera2009missing</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

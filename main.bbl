@@ -16,5 +16,699 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{吕琳媛2010复杂网络链路预测}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bc81b359fc2b40f2945f3a88248675f1}{%
+           family={吕琳媛},
+           familyi={吕\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc81b359fc2b40f2945f3a88248675f1}
+      \strng{fullhash}{bc81b359fc2b40f2945f3a88248675f1}
+      \strng{bibnamehash}{bc81b359fc2b40f2945f3a88248675f1}
+      \strng{authorbibnamehash}{bc81b359fc2b40f2945f3a88248675f1}
+      \strng{authornamehash}{bc81b359fc2b40f2945f3a88248675f1}
+      \strng{authorfullhash}{bc81b359fc2b40f2945f3a88248675f1}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{电子科技大学学报}
+      \field{number}{5}
+      \field{title}{复杂网络链路预测}
+      \field{usera}{J}
+      \field{userd}{复}
+      \field{usere}{吕琳媛}
+      \field{userf}{吕琳媛}
+      \field{volume}{39}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{pages}{651\bibrangedash 661}
+      \range{pages}{11}
+      \keyw{吕琳媛2010复杂网络链路预测}
+    \endentry
+    \entry{李淑玲2012基于相似性的链接预测方法研究}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5388ef98e80c9d9ba9ae67097dc2e3eb}{%
+           family={李淑玲},
+           familyi={李\bibinitperiod}}}%
+      }
+      \strng{namehash}{5388ef98e80c9d9ba9ae67097dc2e3eb}
+      \strng{fullhash}{5388ef98e80c9d9ba9ae67097dc2e3eb}
+      \strng{bibnamehash}{5388ef98e80c9d9ba9ae67097dc2e3eb}
+      \strng{authorbibnamehash}{5388ef98e80c9d9ba9ae67097dc2e3eb}
+      \strng{authornamehash}{5388ef98e80c9d9ba9ae67097dc2e3eb}
+      \strng{authorfullhash}{5388ef98e80c9d9ba9ae67097dc2e3eb}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{硕士论文, 哈尔滨工程大学, 哈尔滨}
+      \field{title}{基于相似性的链接预测方法研究}
+      \field{usera}{J}
+      \field{userd}{基}
+      \field{usere}{李淑玲}
+      \field{userf}{李淑玲}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \keyw{李淑玲2012基于相似性的链接预测方法研究}
+    \endentry
+    \entry{wang2017novel}{article}{}
+      \name{author}{5}{}{%
+        {{hash=ce7e9acdfe99967ee79f5f91b004e00f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jinkun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e8e382586589c84d0be6e95d78367279}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Shasha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=dd8304255c910bcbd7d7d0cb4f7ed860}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=6881d8f49f213e7a5be86c9f380aac60}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Yuanchun},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c5f133678c8bdff0e050e19158f289ed}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{0a2b6567352d893b43a682421bffe61b}
+      \strng{fullhash}{e1e5fca97add3ed25bd5bcec52e55844}
+      \strng{bibnamehash}{0a2b6567352d893b43a682421bffe61b}
+      \strng{authorbibnamehash}{0a2b6567352d893b43a682421bffe61b}
+      \strng{authornamehash}{0a2b6567352d893b43a682421bffe61b}
+      \strng{authorfullhash}{e1e5fca97add3ed25bd5bcec52e55844}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Concurrency and Computation: Practice and Experience}
+      \field{number}{19}
+      \field{title}{A novel collective matrix factorization model for recommendation with fine-grained social trust prediction}
+      \field{usera}{J}
+      \field{userd}{A}
+      \field{usere}{Wang, Jinkun and Zhang, Shasha and Liu, Xiao and Jiang, Yuanchun and Zhang, Min}
+      \field{userf}{Wang, Jinkun and Zhang, Shasha and Liu, Xiao and Jiang, Yuanchun and Zhang, Min}
+      \field{volume}{29}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{e4233}
+      \range{pages}{-1}
+      \keyw{wang2017novel}
+    \endentry
+    \entry{adamic2003friends}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d0821cdd7634ce871d1516a1c10f344a}{%
+           family={Adamic},
+           familyi={A\bibinitperiod},
+           given={Lada\bibnamedelima A},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=f99a5edb05f489fdbbc9725bc822dd6f}{%
+           family={Adar},
+           familyi={A\bibinitperiod},
+           given={Eytan},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{83d69590371baf436b039d88de41a9c2}
+      \strng{fullhash}{83d69590371baf436b039d88de41a9c2}
+      \strng{bibnamehash}{83d69590371baf436b039d88de41a9c2}
+      \strng{authorbibnamehash}{83d69590371baf436b039d88de41a9c2}
+      \strng{authornamehash}{83d69590371baf436b039d88de41a9c2}
+      \strng{authorfullhash}{83d69590371baf436b039d88de41a9c2}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Social networks}
+      \field{number}{3}
+      \field{title}{Friends and neighbors on the web}
+      \field{usera}{J}
+      \field{userd}{F}
+      \field{usere}{Adamic, Lada A and Adar, Eytan}
+      \field{userf}{Adamic, Lada A and Adar, Eytan}
+      \field{volume}{25}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{pages}{211\bibrangedash 230}
+      \range{pages}{20}
+      \keyw{adamic2003friends}
+    \endentry
+    \entry{fokoue2016predicting}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=9a26b52e478d6baff0da0f3f34302804}{%
+           family={Fokoue},
+           familyi={F\bibinitperiod},
+           given={Achille},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e2b50529f90e89b0dc052c9f589e9bbe}{%
+           family={Hassanzadeh},
+           familyi={H\bibinitperiod},
+           given={Oktie},
+           giveni={O\bibinitperiod}}}%
+        {{hash=9e20c298c98d6fd231df2bacfa7e2ca2}{%
+           family={Sadoghi},
+           familyi={S\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=28b6504d56c03d7d44c0ecca06ae0869}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ping},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {International World Wide Web Conferences Steering Committee}%
+      }
+      \strng{namehash}{9e7d1b60ab41059683eaab63c24e9f23}
+      \strng{fullhash}{4721f953d551e49ac93807a0f71fd9e0}
+      \strng{bibnamehash}{9e7d1b60ab41059683eaab63c24e9f23}
+      \strng{authorbibnamehash}{9e7d1b60ab41059683eaab63c24e9f23}
+      \strng{authornamehash}{9e7d1b60ab41059683eaab63c24e9f23}
+      \strng{authorfullhash}{4721f953d551e49ac93807a0f71fd9e0}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 25th International Conference Companion on World Wide Web}
+      \field{title}{Predicting drug-drug interactions through similarity-based link prediction over web data}
+      \field{usera}{C}
+      \field{userd}{P}
+      \field{usere}{Fokoue, Achille and Hassanzadeh, Oktie and Sadoghi, Mohammad and Zhang, Ping}
+      \field{userf}{Fokoue, Achille and Hassanzadeh, Oktie and Sadoghi, Mohammad and Zhang, Ping}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{175\bibrangedash 178}
+      \range{pages}{4}
+      \keyw{fokoue2016predicting}
+    \endentry
+    \entry{huang2013systematic}{article}{}
+      \name{author}{6}{}{%
+        {{hash=b65e42ef667b1eb47b11a60003461561}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Jialiang},
+           giveni={J\bibinitperiod}}}%
+        {{hash=62310d027f3cc14f9b5298fda3ebd249}{%
+           family={Niu},
+           familyi={N\bibinitperiod},
+           given={Chaoqun},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f545007c7fef3165de6dc8f60dcd04f8}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Christopher\bibnamedelima D},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=8b737472161f9411595cc50369d7322c}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Lun},
+           giveni={L\bibinitperiod}}}%
+        {{hash=5152cd239555793ef670d297e0610c23}{%
+           family={Mei},
+           familyi={M\bibinitperiod},
+           given={Hongkang},
+           giveni={H\bibinitperiod}}}%
+        {{hash=6df986bcfad8d070e7a8d60d8a254a13}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Jing-Dong\bibnamedelima J},
+           giveni={J\bibinithyphendelim D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{45ba20e0e7ba0d7068d2fd096a22685a}
+      \strng{fullhash}{633baa4c21d8b7329024a8be5c961b70}
+      \strng{bibnamehash}{45ba20e0e7ba0d7068d2fd096a22685a}
+      \strng{authorbibnamehash}{45ba20e0e7ba0d7068d2fd096a22685a}
+      \strng{authornamehash}{45ba20e0e7ba0d7068d2fd096a22685a}
+      \strng{authorfullhash}{633baa4c21d8b7329024a8be5c961b70}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS computational biology}
+      \field{number}{3}
+      \field{title}{Systematic prediction of pharmacodynamic drug-drug interactions through protein-protein-interaction network}
+      \field{usera}{J}
+      \field{userd}{S}
+      \field{usere}{Huang, Jialiang and Niu, Chaoqun and Green, Christopher D and Yang, Lun and Mei, Hongkang and Han, Jing-Dong J}
+      \field{userf}{Huang, Jialiang and Niu, Chaoqun and Green, Christopher D and Yang, Lun and Mei, Hongkang and Han, Jing-Dong J}
+      \field{volume}{9}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{e1002998}
+      \range{pages}{-1}
+      \keyw{huang2013systematic}
+    \endentry
+    \entry{juurlink2003drug}{article}{}
+      \name{author}{5}{}{%
+        {{hash=f994e17c9dbcad4485557b3c72a5a010}{%
+           family={Juurlink},
+           familyi={J\bibinitperiod},
+           given={David\bibnamedelima N},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=1d03c69487f54a52cccd85b42778d33e}{%
+           family={Mamdani},
+           familyi={M\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c1c8661b92aa5598484af25414ea562e}{%
+           family={Kopp},
+           familyi={K\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7ed1f4a1059f7fe93332f9073208a182}{%
+           family={Laupacis},
+           familyi={L\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7ebe096a114a3722b4f90804dcd11a73}{%
+           family={Redelmeier},
+           familyi={R\bibinitperiod},
+           given={Donald\bibnamedelima A},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Medical Association}%
+      }
+      \strng{namehash}{35f6e50eed9fed2ff6d942d090787027}
+      \strng{fullhash}{5a0a592c375aee4b49f306a9760cd995}
+      \strng{bibnamehash}{35f6e50eed9fed2ff6d942d090787027}
+      \strng{authorbibnamehash}{35f6e50eed9fed2ff6d942d090787027}
+      \strng{authornamehash}{35f6e50eed9fed2ff6d942d090787027}
+      \strng{authorfullhash}{5a0a592c375aee4b49f306a9760cd995}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Jama}
+      \field{number}{13}
+      \field{title}{Drug-drug interactions among elderly patients hospitalized for drug toxicity}
+      \field{usera}{J}
+      \field{userd}{D}
+      \field{usere}{Juurlink, David N and Mamdani, Muhammad and Kopp, Alexander and Laupacis, Andreas and Redelmeier, Donald A}
+      \field{userf}{Juurlink, David N and Mamdani, Muhammad and Kopp, Alexander and Laupacis, Andreas and Redelmeier, Donald A}
+      \field{volume}{289}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{pages}{1652\bibrangedash 1658}
+      \range{pages}{7}
+      \keyw{juurlink2003drug}
+    \endentry
+    \entry{zhang2018prioritizing}{article}{}
+      \name{author}{8}{}{%
+        {{hash=72a50f68ed4845c3078a6bb79839af16}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yaogong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ca2f951b47422efad709e01fd1d0e188}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jiahui},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4975cb216d59ad716c6033f82bf88302}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xiaohu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=e99edc74d5ff32a310944afd1f548dbe}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=8f5667f2664fa2603d177b793c772935}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Yuxiang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=9ada4bcdae17a026fd90c53ac3c8b89b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yuan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=fa66558a82195b6937cfa76ab5c82f04}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={YaLou},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=24fd9152f7fb898b02e071b0ee6fe51b}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={MaoQiang},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {BioMed Central}%
+      }
+      \strng{namehash}{ab6a770dea4daf61ef736e7dfd1d76ee}
+      \strng{fullhash}{1a3e06cda4296109b61b3096bb724e94}
+      \strng{bibnamehash}{ab6a770dea4daf61ef736e7dfd1d76ee}
+      \strng{authorbibnamehash}{ab6a770dea4daf61ef736e7dfd1d76ee}
+      \strng{authornamehash}{ab6a770dea4daf61ef736e7dfd1d76ee}
+      \strng{authorfullhash}{1a3e06cda4296109b61b3096bb724e94}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BMC bioinformatics}
+      \field{number}{1}
+      \field{title}{Prioritizing disease genes with an improved dual label propagation framework}
+      \field{usera}{J}
+      \field{userd}{P}
+      \field{usere}{Zhang, Yaogong and Liu, Jiahui and Liu, Xiaohu and Fan, Xin and Hong, Yuxiang and Wang, Yuan and Huang, YaLou and Xie, MaoQiang}
+      \field{userf}{Zhang, Yaogong and Liu, Jiahui and Liu, Xiaohu and Fan, Xin and Hong, Yuxiang and Wang, Yuan and Huang, YaLou and Xie, MaoQiang}
+      \field{volume}{19}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{47}
+      \range{pages}{1}
+      \keyw{zhang2018prioritizing}
+    \endentry
+    \entry{vilar2012drug}{article}{}
+      \name{author}{6}{}{%
+        {{hash=06176cf82e2953402da129ef31594bc1}{%
+           family={Vilar},
+           familyi={V\bibinitperiod},
+           given={Santiago},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1c10f6aa23f5c0b61da56eff2b417c52}{%
+           family={Harpaz},
+           familyi={H\bibinitperiod},
+           given={Rave},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8469d38a963950af6067de28ed14c30d}{%
+           family={Uriarte},
+           familyi={U\bibinitperiod},
+           given={Eugenio},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f56241e47150db547a1feec6452f2fc8}{%
+           family={Santana},
+           familyi={S\bibinitperiod},
+           given={Lourdes},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b9758d46819149f72006ed88824cf06d}{%
+           family={Rabadan},
+           familyi={R\bibinitperiod},
+           given={Raul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=767bd9ddb4ec6d44bc953b09c02fd37d}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Carol},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {BMJ Group BMA House, Tavistock Square, London, WC1H 9JR}%
+      }
+      \strng{namehash}{4fe3e83c3f33bf8b14c98e9d2c94e919}
+      \strng{fullhash}{594b44a712dca36b6862bc590acd81c4}
+      \strng{bibnamehash}{4fe3e83c3f33bf8b14c98e9d2c94e919}
+      \strng{authorbibnamehash}{4fe3e83c3f33bf8b14c98e9d2c94e919}
+      \strng{authornamehash}{4fe3e83c3f33bf8b14c98e9d2c94e919}
+      \strng{authorfullhash}{594b44a712dca36b6862bc590acd81c4}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Medical Informatics Association}
+      \field{number}{6}
+      \field{title}{Drug—drug interaction through molecular structure similarity analysis}
+      \field{usera}{J}
+      \field{userd}{D}
+      \field{usere}{Vilar, Santiago and Harpaz, Rave and Uriarte, Eugenio and Santana, Lourdes and Rabadan, Raul and Friedman, Carol}
+      \field{userf}{Vilar, Santiago and Harpaz, Rave and Uriarte, Eugenio and Santana, Lourdes and Rabadan, Raul and Friedman, Carol}
+      \field{volume}{19}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{1066\bibrangedash 1074}
+      \range{pages}{9}
+      \keyw{vilar2012drug}
+    \endentry
+    \entry{chen2014robust}{article}{}
+      \name{author}{2}{}{%
+        {{hash=67a2c49138a656c30193d6c5495e1262}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jinhui},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5a1cb92dc789e714fb5aaf67809119a6}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{361596bb27a22f399e136f83bfcadbc1}
+      \strng{fullhash}{361596bb27a22f399e136f83bfcadbc1}
+      \strng{bibnamehash}{361596bb27a22f399e136f83bfcadbc1}
+      \strng{authorbibnamehash}{361596bb27a22f399e136f83bfcadbc1}
+      \strng{authornamehash}{361596bb27a22f399e136f83bfcadbc1}
+      \strng{authorfullhash}{361596bb27a22f399e136f83bfcadbc1}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE transactions on cybernetics}
+      \field{number}{8}
+      \field{title}{Robust subspace segmentation via low-rank representation}
+      \field{usera}{J}
+      \field{userd}{R}
+      \field{usere}{Chen, Jinhui and Yang, Jian}
+      \field{userf}{Chen, Jinhui and Yang, Jian}
+      \field{volume}{44}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{1432\bibrangedash 1445}
+      \range{pages}{14}
+      \keyw{chen2014robust}
+    \endentry
+    \entry{scellato2011exploiting}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=5e3b55c3b1f29f1999bb8d5a586fed04}{%
+           family={Scellato},
+           familyi={S\bibinitperiod},
+           given={Salvatore},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c23742671050c97997f4df56cb59857e}{%
+           family={Noulas},
+           familyi={N\bibinitperiod},
+           given={Anastasios},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d8c8e7d2df9a0e7298074097b915c311}{%
+           family={Mascolo},
+           familyi={M\bibinitperiod},
+           given={Cecilia},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{7ddd822ecb8f8a4ce8619cb1148d3377}
+      \strng{fullhash}{7ddd822ecb8f8a4ce8619cb1148d3377}
+      \strng{bibnamehash}{7ddd822ecb8f8a4ce8619cb1148d3377}
+      \strng{authorbibnamehash}{7ddd822ecb8f8a4ce8619cb1148d3377}
+      \strng{authornamehash}{7ddd822ecb8f8a4ce8619cb1148d3377}
+      \strng{authorfullhash}{7ddd822ecb8f8a4ce8619cb1148d3377}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 17th ACM SIGKDD international conference on Knowledge discovery and data mining}
+      \field{title}{Exploiting place features in link prediction on location-based social networks}
+      \field{usera}{C}
+      \field{userd}{E}
+      \field{usere}{Scellato, Salvatore and Noulas, Anastasios and Mascolo, Cecilia}
+      \field{userf}{Scellato, Salvatore and Noulas, Anastasios and Mascolo, Cecilia}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{pages}{1046\bibrangedash 1054}
+      \range{pages}{9}
+      \keyw{scellato2011exploiting}
+    \endentry
+    \entry{elhamifar2013sparse}{article}{}
+      \name{author}{2}{}{%
+        {{hash=31f917debd7b20e0d9dc0dda207fa88d}{%
+           family={Elhamifar},
+           familyi={E\bibinitperiod},
+           given={Ehsan},
+           giveni={E\bibinitperiod}}}%
+        {{hash=a0dc207d014582f3f6e6aba904bc34a6}{%
+           family={Vidal},
+           familyi={V\bibinitperiod},
+           given={Rene},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{03fbc91ad95e31b518e6266096759afe}
+      \strng{fullhash}{03fbc91ad95e31b518e6266096759afe}
+      \strng{bibnamehash}{03fbc91ad95e31b518e6266096759afe}
+      \strng{authorbibnamehash}{03fbc91ad95e31b518e6266096759afe}
+      \strng{authornamehash}{03fbc91ad95e31b518e6266096759afe}
+      \strng{authorfullhash}{03fbc91ad95e31b518e6266096759afe}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE transactions on pattern analysis and machine intelligence}
+      \field{number}{11}
+      \field{title}{Sparse subspace clustering: Algorithm, theory, and applications}
+      \field{usera}{J}
+      \field{userd}{S}
+      \field{usere}{Elhamifar, Ehsan and Vidal, Rene}
+      \field{userf}{Elhamifar, Ehsan and Vidal, Rene}
+      \field{volume}{35}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{2765\bibrangedash 2781}
+      \range{pages}{17}
+      \keyw{elhamifar2013sparse}
+    \endentry
+    \entry{xu2016link}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2aabcd3b868cbfaf3814f8f6a825a456}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Zhongqi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=e311bf37ea33ed2df64bfa9966bbf720}{%
+           family={Pu},
+           familyi={P\bibinitperiod},
+           given={Cunlai},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5a1cb92dc789e714fb5aaf67809119a6}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{568d3d4c0ca725bfd9f9497a591c7fc7}
+      \strng{fullhash}{568d3d4c0ca725bfd9f9497a591c7fc7}
+      \strng{bibnamehash}{568d3d4c0ca725bfd9f9497a591c7fc7}
+      \strng{authorbibnamehash}{568d3d4c0ca725bfd9f9497a591c7fc7}
+      \strng{authornamehash}{568d3d4c0ca725bfd9f9497a591c7fc7}
+      \strng{authorfullhash}{568d3d4c0ca725bfd9f9497a591c7fc7}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+      \field{title}{Link prediction based on path entropy}
+      \field{usera}{J}
+      \field{userd}{L}
+      \field{usere}{Xu, Zhongqi and Pu, Cunlai and Yang, Jian}
+      \field{userf}{Xu, Zhongqi and Pu, Cunlai and Yang, Jian}
+      \field{volume}{456}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{294\bibrangedash 301}
+      \range{pages}{8}
+      \keyw{xu2016link}
+    \endentry
+    \entry{singh2008relational}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=4ebf39fff91485664136e7dc148bbcbd}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Ajit\bibnamedelima P},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=cdb5df542700d972682d170592bae06a}{%
+           family={Gordon},
+           familyi={G\bibinitperiod},
+           given={Geoffrey\bibnamedelima J},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{bdec73a8e8620aaad99bffd94e2c5b52}
+      \strng{fullhash}{bdec73a8e8620aaad99bffd94e2c5b52}
+      \strng{bibnamehash}{bdec73a8e8620aaad99bffd94e2c5b52}
+      \strng{authorbibnamehash}{bdec73a8e8620aaad99bffd94e2c5b52}
+      \strng{authornamehash}{bdec73a8e8620aaad99bffd94e2c5b52}
+      \strng{authorfullhash}{bdec73a8e8620aaad99bffd94e2c5b52}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining}
+      \field{title}{Relational learning via collective matrix factorization}
+      \field{usera}{C}
+      \field{userd}{R}
+      \field{usere}{Singh, Ajit P and Gordon, Geoffrey J}
+      \field{userf}{Singh, Ajit P and Gordon, Geoffrey J}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{650\bibrangedash 658}
+      \range{pages}{9}
+      \keyw{singh2008relational}
+    \endentry
+    \entry{guimera2009missing}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e227476ddda105cab5508969c8ef7fc3}{%
+           family={Guimer{à}},
+           familyi={G\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e8b7c0e08158b30575d238ef1a0e69cd}{%
+           family={Sales-Pardo},
+           familyi={S\bibinithyphendelim P\bibinitperiod},
+           given={Marta},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Acad Sciences}%
+      }
+      \strng{namehash}{d39dd9af38b835e09529ffe4f3fe5231}
+      \strng{fullhash}{d39dd9af38b835e09529ffe4f3fe5231}
+      \strng{bibnamehash}{d39dd9af38b835e09529ffe4f3fe5231}
+      \strng{authorbibnamehash}{d39dd9af38b835e09529ffe4f3fe5231}
+      \strng{authornamehash}{d39dd9af38b835e09529ffe4f3fe5231}
+      \strng{authorfullhash}{d39dd9af38b835e09529ffe4f3fe5231}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{number}{52}
+      \field{title}{Missing and spurious interactions and the reconstruction of complex networks}
+      \field{usera}{J}
+      \field{userd}{M}
+      \field{usere}{Guimer{à}, Roger and Sales-Pardo, Marta}
+      \field{userf}{Guimer{à}, Roger and Sales-Pardo, Marta}
+      \field{volume}{106}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{22073\bibrangedash 22078}
+      \range{pages}{6}
+      \keyw{guimera2009missing}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
