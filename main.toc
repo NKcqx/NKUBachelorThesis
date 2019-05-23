@@ -66,9 +66,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.5}聚类系数与算法性能的关系}{25}{subsection.3.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.6}案例分析}{25}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.6}案例分析}{26}{subsection.3.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {第\CJKnumber {3}节}本章小节}{27}{section.3.3}
+\contentsline {section}{\numberline {第\CJKnumber {3}节}本章小节}{28}{section.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {第\CJKnumber {4}章}总结与展望}{29}{chapter.4}
 \defcounter {refsection}{0}\relax 

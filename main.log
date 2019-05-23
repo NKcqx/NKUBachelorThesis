@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.4.23)  23 MAY 2019 00:51
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.4.23)  23 MAY 2019 19:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2023,25 +2023,38 @@ Overfull \hbox (11.38626pt too wide) in paragraph at lines 74--75
 
 
 
-] [14]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 51.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 51.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 51.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 51.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+ [14]
+Underfull \vbox (badness 2285) has occurred while \output is active []
 
  [15]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 94.
+               Default added (so using `tbp') on input line 93.
 
 File: image/node_distribution.pdf Graphic file (type pdf)
 <use image/node_distribution.pdf>
 
-Overfull \hbox (0.64917pt too wide) in paragraph at lines 104--112
+Overfull \hbox (0.64917pt too wide) in paragraph at lines 103--111
  [][] 
  []
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 120.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 119.
 
 *************************************************
 * xeCJK warning: "CJKfamily-Unknown"
@@ -2051,44 +2064,44 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
 * Try to use `\setCJKmonofont[...]{...}' to define it.
 *************************************************
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 121.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 120.
 [16] [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18] [19]
-Overfull \hbox (0.53413pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.53413pt too wide) in paragraph at lines 254--254
  []|[]| 
  []
 
 
-Overfull \hbox (47.2227pt too wide) in paragraph at lines 254--265
+Overfull \hbox (47.2227pt too wide) in paragraph at lines 253--264
  [][] 
  []
 
 
-Overfull \hbox (4.88124pt too wide) in paragraph at lines 271--271
+Overfull \hbox (4.88124pt too wide) in paragraph at lines 270--270
  []|\TU/TimesNewRoman(0)/m/n/12 CLML| 
  []
 
 
-Overfull \hbox (4.22499pt too wide) in paragraph at lines 271--271
+Overfull \hbox (4.22499pt too wide) in paragraph at lines 270--270
  []|\TU/TimesNewRoman(0)/m/n/12 MCLP| 
  []
 
 
-Overfull \hbox (2.22108pt too wide) in paragraph at lines 271--271
+Overfull \hbox (2.22108pt too wide) in paragraph at lines 270--270
  []|\TU/TimesNewRoman(0)/m/n/12 MCRI| 
  []
 
 
-Overfull \hbox (47.2227pt too wide) in paragraph at lines 270--279
+Overfull \hbox (47.2227pt too wide) in paragraph at lines 269--278
  [][] 
  []
 
 [20]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 306.
+               Default added (so using `tbp') on input line 303.
 
 File: image/post_hoc.pdf Graphic file (type pdf)
 <use image/post_hoc.pdf>
@@ -2113,15 +2126,18 @@ File: image/degree_auc2.png Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
-File: image/CC_auc.png Graphic file (type bmp)
-<image/CC_auc.png>
- [25]
-Underfull \vbox (badness 3312) has occurred while \output is active []
+File: image/CC_AUC.pdf Graphic file (type pdf)
+<use image/CC_AUC.pdf>
 
- [26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25] [26]
 File: image/network.pdf Graphic file (type pdf)
 <use image/network.pdf>
-) [27] [28]
+)
+Underfull \vbox (badness 2012) has occurred while \output is active []
+
+ [27] [28]
 \openout2 = `./tex/summary.aux'.
 
  (./tex/summary.tex
@@ -2164,12 +2180,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43911 strings out of 492970
- 903947 string characters out of 6133938
- 1397180 words of memory out of 5000000
- 47250 multiletter control sequences out of 15000+600000
- 571446 words of font info for 173 fonts, out of 8000000 for 9000
+ 43990 strings out of 492970
+ 906917 string characters out of 6133938
+ 1398590 words of memory out of 5000000
+ 47328 multiletter control sequences out of 15000+600000
+ 578184 words of font info for 192 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 62i,11n,72p,10476b,4488s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,11n,72p,10476b,4689s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on main.pdf (38 pages).
