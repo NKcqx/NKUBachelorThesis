@@ -74,7 +74,7 @@
 
 
 为进一步帮助理解数据集的特点，我们又分析了每个数据集中节点度数的分布（图\ref{experiments:fig:node_distribution}），
-并统计了每个数据集的聚类系数、平均度数、网络直径等分析复杂网络常用的统计指标，见表\ref{experiments:table:simple_stats}。
+并统计了每个数据集的聚类系数、平均度数、网络直径等分析复杂网络常用的统计指标，见表\ref{experiments:table:topo_stats}。
 
 
 \begin{center}
@@ -107,7 +107,7 @@
             网络直径     & 29   & 11  & 11  &  7  \\
             平均近邻数     & 1.948  & 14.990 & 23.048  & 16.348  \\ \hline
         \end{tabular}
-        \label{experiments:table:simple_stats}
+        \label{experiments:table:topo_stats}
 \end{center}
 
 实验时，我们随机选取80\%的数据作为训练集，记录并删掉剩余的20\%数据作为测试集，然后用在训练集上的预测结果与测试集做对比。
@@ -287,12 +287,10 @@ AUC值接近甚至低于0.5，因为这些算法并没有利用辅助信息也�
 
 得到上述结论后，我们还想进一步比较各算法的具体差异，为此我们又在这之上引入了Nemenyi后续检验。
 Nemenyi后续检验计算出平均排名差别的临界值域：
-
 \begin{equation}
     CD=q_{\alpha}\sqrt{\frac{k(k+1)}{6N}}
     \label{experiments:formula:CD}
 \end{equation}
-
 
 当$\alpha=0.1$，$k=9$时Nemenyi检验常用的$q_{\alpha}$值为2.585，代入式(\ref{experiments:formula:CD})中计算出临界值域$CD\approx4.8$。
 图\ref{experiments:fig:post_hoc}用弗里德曼检验图直观地展示了上述结果，其中：横轴代表排名，纵轴代表每个算法，图中横线长度代表临界值域CD（取CD=5），
@@ -460,7 +458,6 @@ Nemenyi后续检验计算出平均排名差别的临界值域：
 在先前的实验中，我们在阐释CLML算法在各数据集上的结果时仅给出了如AUC、AUPR值这样抽象的数学结论。
 而这一节为了进一步具体地看出CLML在实际应用中的价值，我们将CLML在做药物-药物关联预测时的结果从现实意义上做了分析，并将部分结果做了可视化处理。
 
-
 在上文中提到，算法最终的结果是一个概率矩阵P，矩阵中的每个元素表示点i与点j产生关联的概率，在药物-药物关联预测中的意义即为药物i和药物j在临床使用时发生相互作用的概率。
 为了验证CLML的实际意义，我们从预测结果中选取了前十个有着最大概率且未在Drugbank中收录的链接（相互作用），
 并从Drugbank中找到了其对应的药物名称，如表\ref{experiments:table:case_study}所示。
@@ -469,7 +466,6 @@ Nemenyi后续检验计算出平均排名差别的临界值域：
 在这10个潜在关联中，有8个（80\%）已被验证为正确，这足以证明CLML算法在药物-药物关联预测这类实际应用场景下的有效性。
 图\ref{experiments:fig:network}以表中所涉及的药物为例画出了与其相关的所有药物间的关系网络，节点颜色表示其度数，颜色越深则其度数越高；
 方形节点为表\ref{experiments:table:case_study}中涉及到的药物，粗实线表示预测出且被验证为存在的关联，粗虚线表示预测出但尚未得到验证的关联
-
 
 举例来说，在概述中提到，患有抑郁症等情绪障碍的患者需要长期服用抗抑郁类药物，而此类患者又往往伴随其它病灶，需要同时服用多种药物，因此导致抗抑郁类药物成为发生DDI的“主力军”。
 在表\ref{experiments:table:case_study}的第七行中，我们预测出了一例由帕罗西丁（Paroxetine）与盐酸多奈哌齐（Donepezil）共同临床使用引起的相互作用，
