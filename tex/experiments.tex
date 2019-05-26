@@ -15,10 +15,10 @@
 
 \begin{center}
     \tablecaption{混淆矩阵}
-    \begin{tabular}{|c|c|c|} \hline
-        \multirow{2}{*}{真实情况} & \multicolumn{2}{c|}{预测结果} \\ \cline{2-3}
+    \begin{tabular}{ccc} \hline
+        \multirow{2}{*}{真实情况} & \multicolumn{2}{c}{预测结果} \\ \cline{2-3}
                                 & 正例  & 反例  \\ \hline
-        正例                     & 真正例(TN)   & 假反例(FN) \\ \hline
+        正例                     & 真正例(TN)   & 假反例(FN) \\ 
         反例                     & 假正例(FP)   & 真反例(TN) \\ \hline
     \end{tabular}
     \label{experiments:table:mix_matrix}
@@ -79,7 +79,7 @@
 
 \begin{center}
     \tablecaption{对四个数据集的初步统计数据}
-    \begin{tabular}{@{\extracolsep{\fill}}p{2.5cm}<{\centering}|p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}}\hline
+    \begin{tabular}{@{\extracolsep{\fill}}p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}}\hline
         数据集        & Douban & Yelp & NIPS & DDI \\ \hline
         关系(A-B)   & 用户-电影 & 用户-商家 & 作者-出版物 & 药物-靶蛋白 \\
         A的数量       & 13367   & 16239  & 2865  &  758  \\
@@ -100,7 +100,7 @@
 
 \begin{center}
     \tablecaption{各数据集拓扑结构的详细信息}
-        \begin{tabular}{p{2.5cm}<{\centering}|p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}}\hline
+        \begin{tabular}{p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}}\hline
             数据集          & Douban & Yelp & NIPS & DDI \\ \hline
             聚类系数        & 0.017 & 0.226 & 0.609 & 0.164 \\
             网络密度       & 0.001   & 0.001  & 0.009  &  0.023  \\
@@ -171,7 +171,7 @@ AUC值接近甚至低于0.5，因为这些算法并没有利用辅助信息也�
 
 \begin{center}
     \tablecaption{各算法的AUC20值对比}
-    \begin{tabular}{c|cccc} \hline
+    \begin{tabular}{ccccc} \hline
         算法 & Douban & Yelp & NIPS & DDI \\ \hline
         CN  & 0.0213 & 0.0568 & 0.0193 & 0.0161 \\
         AA  & 0.0290 & 0.0282 & 0.0173 & 0.0251 \\
@@ -189,7 +189,7 @@ AUC值接近甚至低于0.5，因为这些算法并没有利用辅助信息也�
 
 \begin{center}
     \tablecaption{各算法的AUC值对比}
-    \begin{tabular}{c|cccc} \hline
+    \begin{tabular}{ccccc} \hline
         算法&	Douban & Yelp & NIPS & DDI \\ \hline
         CN  & 0.5186 & 0.5804 & 0.5038 & 0.5121 \\
         AA  & 0.5248 & 0.5489 & 0.5057 & 0.5388 \\
@@ -206,7 +206,7 @@ AUC值接近甚至低于0.5，因为这些算法并没有利用辅助信息也�
 
 \begin{center}
     \tablecaption{各算法的AUPR值对比} 
-    \begin{tabular}{c|cccc} \hline
+    \begin{tabular}{ccccc} \hline
         算法 &	Douban & Yelp & NIPS & DDI \\ \hline
         CN  & 0.0115 & 0.0229 & 0.0171 & 0.0292 \\
         AA  & 0.0085 & 0.0141 & 0.0170 & 0.0322 \\
@@ -232,26 +232,24 @@ AUC值接近甚至低于0.5，因为这些算法并没有利用辅助信息也�
 再这之后又使用Nemenyi后续检验（Nemenyi post-hoc test）进一步区分了各算法\cite{yang2015evaluating}\cite{demvsar2006statistical}。
 
 
-令$N$表示数据集个数，$k$表示算法个数，$r_i$表示第$i$个算法的平均排名，则$r_i$的平均值和方差分别为$(k+1)/2$和$(k^2-1)/12$。变量
-
+令$N$表示数据集个数，$k$表示算法个数，$r_i$表示第$i$个算法的平均排名，则$r_i$的平均值和方差分别为$(k+1)/2$和$(k^2-1)/12$。
+变量$\tau_{\chi^2}$的定义如式(\ref{experiments:formula:tau})。
 \begin{equation}
     \tau_{\chi^2} =\frac{k-1}{k}\cdot\frac{12N}{k^2-1}\sum_{i=1}^k(r_i-\frac{k+1}{2})^2 =\frac{12N}{k(k+1)}(\sum_{i=1}^kr_i^2-\frac{k(k+1)^2}{4})
     \label{experiments:formula:tau}
 \end{equation}
 
 在$k$和$N$都较大时，$\tau_{\chi^2}$服从自由度为$k-1$的卡方分布。不过目前在做弗里德曼检验时通常使用的是变量：
-
 \begin{equation}
     \tau_F=\frac{(N-1)\tau_{\chi^2}}{N(k-1)-\tau_{\chi^2}} 
     \label{experiments:formula:tauF}
 \end{equation}
-    
 其中$\tau_{\chi^2}$的值由式(\ref{experiments:formula:tau})得到，$\tau_F$服从自由度为$k-1$的F分布，表\ref{experiments:table:F_test}给出了F检验的常用临界值。
 
 \begin{center}
     \tablecaption{F检验在α=0.1时常用的临界值}
-    \begin{tabular}{|p{2.5cm}<{\centering}|p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1.5cm}<{\centering}|} \hline
-        \multirow{2}{*}{数据集个数N} & \multicolumn{9}{c|}{算法个数} \\ \cline{2-10}
+    \begin{tabular}{p{2.5cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1.5cm}<{\centering}} \hline
+        \multirow{2}{*}{数据集个数N} & \multicolumn{9}{c}{算法个数} \\ \cline{2-10}
          & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
         4 & 5.538 & 3.463 & 2.813 & 2.480 & 2.273 & 2.130 & 2.023 & 1.940 & 1.874 \\
         5 & 4.545 & 3.113 & 2.606 & 2.333 & 2.158 & 2.035 & 1.943 & 1.870 & 1.811 \\
@@ -266,7 +264,7 @@ AUC值接近甚至低于0.5，因为这些算法并没有利用辅助信息也�
 
 \begin{center}
     \tablecaption{算法结果的排名统计}
-    \begin{tabular}{|p{2.5cm}<{\centering}|p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1.5cm}<{\centering}|} \hline
+    \begin{tabular}{p{2.5cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1.5cm}<{\centering}} \hline
            & CLML & LML & CN & AA & NSI & LP & MCLP & MCRI & MRMF \\ \hline
         Douban & 1 & 5 & 9 & 8 & 6 & 7 & 2 & 3 & 4 \\
         Yelp & 1 & 7 & 8 & 9 & 6 & 4 & 3 & 5 & 2 \\
@@ -475,7 +473,7 @@ Nemenyi后续检验计算出平均排名差别的临界值域：
 
 \begin{center}
     \tablecaption{预测出的前十名最有可能发生的DDI}
-    \begin{tabular}{c|c|c}\hline
+    \begin{tabular}{ccc}\hline
     概率排名 & DrugBank ID & 药品名称\\ \hline
     \bfseries 1 & \bfseries DB00777, DB00674 & \bfseries Propiomazine, Galantamin \\
     \bfseries 2 & \bfseries DB01238, DB00674 & \bfseries Aripiprazole, Galantamine \\
