@@ -12,7 +12,7 @@
 在[0.5, 1.0]的样本便被标记为正类（Positive）。根据样本的真实类别与算法预测类别的组合可将样本划分为四类，
 分别为：真正例（True Positive，TP）、假正例（False Positive，FP）、真反例（True Negative，TN）、假反例（False Negative，FN）。
 据此，我们可得到表\ref{experiments:table:mix_matrix}中的“混淆矩阵”，它表明样本是否被错误分类，是评估分类算法的基础。
-
+\zihaowu
 \begin{center}
     \tablecaption{混淆矩阵}
     \begin{tabular}{ccc} \hline
@@ -23,20 +23,20 @@
     \end{tabular}
     \label{experiments:table:mix_matrix}
 \end{center}
-
+\zihaoxiaosi
 \begin{enumerate}
-    \item ROC:ROC曲线全名为Receiver Operating Characteristic curve，即“受试者工作曲线”，是衡量二分类算法的一个常用指标。
+    \item ROC：ROC曲线全名为Receiver Operating Characteristic curve，即“受试者工作曲线”，是衡量二分类算法的一个常用指标。
     曲线画出了当阈值在[0.0, 1.0]范围内变化时，模型真正例率（True Positive Rate，TPR）和假正例率（False Negative Rate，FNR）的变化情况。
     TPR和FNR分别定义为：
     \[ TPR = \frac{True Positives}{True Positives + False Negatives} \]
     \[ FPR = \frac{False Positives}{False Positives + True Negatives} \]
     ROC在二分类算法中经常被使用的原因为：首先，可在ROC曲线图中直观地对比不同的算法；其次，ROC曲线下的面积（AUC）可作为模型性能的总结[26]。
-    \item AUC:AUC\cite{hanley1982meaning}(Area Under Curve of ROC)是评估模型预测结果质量时经常使用的一个指标。AUC的取值范围为[0, 1]，值越大代表分类器越好。
+    \item AUC：AUC\cite{hanley1982meaning}(Area Under Curve of ROC)是评估模型预测结果质量时经常使用的一个指标。AUC的取值范围为[0, 1]，值越大代表分类器越好。
     次。一个较简单的计算公式为：
     \[AUC=\frac{1}{mn}\sum^m_{i=1}\sum^n_{j=1}1_{p_i>p_j}\]
     其中，$m$表示所有的真正例样本数量$n$表示所有的真负例样本数量，$1_{p_i>p_j}$则表示赋予真正例样本的概率大于真负例样本概率的个数。
-    \item AUC20:由于我们的算法更加侧重于预测出的高概率链接，因此我们限制预测出的FP数量要小于等于20，并将该结果也作为一个评价指标。
-    \item AUPR: AUPR\cite{davis2006relationship} 全称为Area Under curve of Precision-Recall，其中查准率P（precision）和查全率R（recall）分别定义为:
+    \item AUC20：由于我们的算法更加侧重于预测出的高概率链接，因此我们限制预测出的FP数量要小于等于20，并将该结果也作为一个评价指标。
+    \item AUPR：AUPR\cite{davis2006relationship} 全称为Area Under curve of Precision-Recall，其中查准率P（precision）和查全率R（recall）分别定义为:
     \[P=\frac{TP}{TP+FP}\] \[R=\frac{TP}{TP+FN}\]
     显然查准率和查全率是一对相互矛盾的度量（P高时R往往偏低，反之亦然）。
     类似于画ROC曲线的方式，PR曲线描述了当阈值变化时查准率和查全率的关系，曲线下方的面积（AUPR）提供了对正确预测出正类和负类比例的量化性评估\cite{van2011gaussian}。
@@ -48,15 +48,15 @@
 \label{experiments:sec:db_cv}
 实验时我们从四个完全不同的领域挑选出了四个数据集，分别为：
 \begin{enumerate}
-    \item Douban Movie数据集，Douban Movie是国内一个知名的影评网站\footnote{https://movie.douban.com/},用户可在网站上对任意电影从1至5打分；
+    \item Douban Movie数据集：Douban Movie是国内一个知名的影评网站\footnote{https://movie.douban.com/},用户可在网站上对任意电影从1至5打分；
     此外，用户还可添加好友，进行一定程度的社交。又因为不同电影可以根据类别、演员、语种甚至上映日期分类，
     故我们可选定一些特征将电影分类，规定某一类中的电影是彼此相似的。通过在该网站爬取上述信息，
     我们便可构建出用户-用户关联矩阵$D$、用户-电影关联矩阵$R$以及电影-电影关联矩阵$T$。
-    \item Yelp数据集，Yelp是国外一个很常用的商户点评网站\footnote{http://www.yelp.com/dataset challenge/}，用户可在其上对到访过的商户打分、评论以供后人参考。
+    \item Yelp数据集：Yelp是国外一个很常用的商户点评网站\footnote{http://www.yelp.com/dataset challenge/}，用户可在其上对到访过的商户打分、评论以供后人参考。
     使用类似处理Douban数据集的方法，我们同样可以获得$D$、$R$、$T$矩阵。
-    \item NIPS合作数据集包含了在特定科研领域中发表的论文与其作者，以及最具特点的：不同作者间相互合作的关系。
+    \item NIPS合作数据集：NIPS合作数据集包含了在特定科研领域中发表的论文与其作者，以及最具特点的：不同作者间相互合作的关系。
     例如，若作者A和作者B共同参与发表了一篇论文，则可认为A和B进行了一次合作。该数据集也因此受到了来自不同领域学者的广泛关注。
-    \item DDI数据集，如第一章所述，DDI表示不同药物在临床共同使用时是否会发生相互作用。
+    \item DDI数据集：如第一章所述，DDI表示不同药物在临床共同使用时是否会发生相互作用。
     与之类似，DPI（Drug-Protein Interaction）网络代表药物对与靶蛋白之间的关系（许多药物都是通过影响特定蛋白质的合成来治疗疾病的）、
     PPI（Protein-Protein Interaction）代表蛋白质与蛋白质间的作用（许多疾病、基因表型往往是多种蛋白共同作用的结果）。
     Drugbank是一个权威的生物医学信息网站，其每一两个月就会统计各文献、临床报告中发现的新的DDI、DPI和PPI，
@@ -76,7 +76,7 @@
 为进一步帮助理解数据集的特点，我们又分析了每个数据集中节点度数的分布（图\ref{experiments:fig:node_distribution}），
 并统计了每个数据集的聚类系数、平均度数、网络直径等分析复杂网络常用的统计指标，见表\ref{experiments:table:topo_stats}。
 
-
+\zihaowu
 \begin{center}
     \tablecaption{对四个数据集的初步统计数据}
     \begin{tabular}{@{\extracolsep{\fill}}p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}p{2.5cm}<{\centering}}\hline
@@ -109,7 +109,7 @@
         \end{tabular}
         \label{experiments:table:topo_stats}
 \end{center}
-
+\zihaoxiaosi
 实验时，我们随机选取80\%的数据作为训练集，记录并删掉剩余的20\%数据作为测试集，然后用在训练集上的预测结果与测试集做对比。
 模型训练时使用5*10折交叉验证，即我们将训练集随机划分为10份，每轮依次使用其中的1份作为验证集，剩余的9份作为训练集，
 重复5次取平均数作为本次模型的结果，代码3.1为交叉验证的关键代码：
@@ -168,7 +168,7 @@
 此外，从各算法的AUC值可以看出，基于特征提取（feature extraction）、标签传播（label propagation）的算法在链接预测问题上并不适用，
 AUC值接近甚至低于0.5，因为这些算法并没有利用辅助信息也没有考虑到数据的结构特点。
 与之相反，CLML不仅利用了数据集中的辅助信息，也考虑了数据的流形结构和低秩特性，这也是CLML在此类数据集上的优点。 
-
+\zihaowu
 \begin{center}
     \tablecaption{各算法的AUC20值对比}
     \begin{tabular}{ccccc} \hline
@@ -220,7 +220,7 @@ AUC值接近甚至低于0.5，因为这些算法并没有利用辅助信息也�
     \end{tabular}
     \label{experiments:table:aupr}
 \end{center}
-
+\zihaoxiaosi
 \subsection{后续检验}
 
 通过观察数据初步得出了CLML优于其它算法的结论，但仅凭比较测试结果的大小还远不足以下最终定论，主要有以下几个原因：
@@ -245,7 +245,7 @@ AUC值接近甚至低于0.5，因为这些算法并没有利用辅助信息也�
     \label{experiments:formula:tauF}
 \end{equation}
 其中$\tau_{\chi^2}$的值由式(\ref{experiments:formula:tau})得到，$\tau_F$服从自由度为$k-1$的F分布，表\ref{experiments:table:F_test}给出了F检验的常用临界值。
-
+\zihaowu
 \begin{center}
     \tablecaption{F检验在α=0.1时常用的临界值}
     \begin{tabular}{p{2.5cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1cm}<{\centering}p{1.5cm}<{\centering}} \hline
@@ -274,6 +274,7 @@ AUC值接近甚至低于0.5，因为这些算法并没有利用辅助信息也�
     \end{tabular}
     \label{experiments:table:rank}
 \end{center}
+\zihaoxiaosi
 
 为计算上述变量的值，我们以算法的AUC值为例，计算了所有算法在不同数据集中AUC值的排名，见表\ref{experiments:table:rank}。
 
@@ -470,7 +471,7 @@ Nemenyi后续检验计算出平均排名差别的临界值域：
 其中前者就是一类被称为SSRIs的抗抑郁药物，在看到其临床效果之前可能需要数周的治疗，它和盐酸多奈哌齐会互相影响（抑制或促进都有可能）彼此的药物代谢作用从而影响到药效，
 因此被建议临床使用时需有医生监控。
 
-
+\zihaowu
 \begin{center}
     \tablecaption{预测出的前十名最有可能发生的DDI}
     \begin{tabular}{ccc}\hline
@@ -488,7 +489,7 @@ Nemenyi后续检验计算出平均排名差别的临界值域：
     \end{tabular}
     \label{experiments:table:case_study}
 \end{center}
-
+\zihaoxiaosi
 
 \begin{figure}
     \centering
@@ -498,7 +499,7 @@ Nemenyi后续检验计算出平均排名差别的临界值域：
 \end{figure}
 
 
-\section{本章小节}
+\section{本章小结}
 在这一章中我们通过实验得到了CLML算法的各项性能，
 其中通过实验一我们得到了CLML和其它比较算法在各个数据集上的AUC、AUPR等性能指标，并进一步用后续检验得出了CLML优于其它算法的结论；
 通过实验二我们发现CLML较其它算法而言具有更好的鲁棒性；
